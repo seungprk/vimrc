@@ -25,6 +25,9 @@ let g:NERDTreeWinSize=20
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden=1
 
+" NERDCommenter
+let NERDSpaceDelims=1
+
 " Airline
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
@@ -38,16 +41,12 @@ set shiftwidth=2
 set expandtab
 set softtabstop=2
 
-" Matching Braces, Brackets, etc.
-ino " ""<left>
-ino ' ''<left>
-ino ( ()<left>
-ino [ []<left>
-ino { {}<left>
-
 " netrw
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 15
+
+" ALE
+let g:ale_fixers = {'javascript': ['eslint']}
